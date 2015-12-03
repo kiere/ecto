@@ -202,7 +202,7 @@ defmodule Ecto.Schema do
   adapter/database.
 
   Therefore, when working and manipulating external data, it is
-  recommended the usage of `Ecto.Changeset`'s that are able to filter
+  recommended that you use `Ecto.Changeset` which is able to filter
   and properly cast external data:
 
       changeset = Ecto.Changeset.cast(%User{}, %{"age" => "0"}, [:age], [])
